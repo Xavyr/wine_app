@@ -1,0 +1,19 @@
+
+
+<br/>
+<br/>
+<% if @reset != true %>
+  <% @possible_answers.each do |answer| %>
+    <% url_answer =  answer.delete(' ').downcase! %>
+    <form action="<%= @fire %>/<%= url_answer %>" method="post">
+      <p class="fancy"><button class="btn btn-primary" name="answer" value="<%= url_answer %>"><%= answer %></button></p>
+    </form>
+  <% end %>
+<% else %>
+  <form action="/wine">
+    <input type="submit" name="" class="btn btn-danger" name="answer" value="Start Over">
+  </form>
+<% end %>
+
+
+

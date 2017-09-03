@@ -1,0 +1,44 @@
+html,
+body,
+h1 {
+  margin: 0;
+  height: 100%;
+}
+#banner {
+  position: relative;
+  height: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+#banner .video {
+  z-index: -99;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+}
+
+.content {
+  padding: 0;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 300px;
+  margin-left: 790px;
+  position: absolute;
+}
+
+form {
+  display: inline-block;
+}
+
+.fancy {
+  font-family: Cambria;
+}
+
+.destination {
+  font-size: 36px;
+  color: #860808;
+  text-shadow: 2px 0 white, 0 -2px white, -2px 0 white, 0 2px white;
+}
+
