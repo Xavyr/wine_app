@@ -47,7 +47,23 @@ post "/wine/personaluse/yes/no" do
   @fire = request.fullpath
 
   @question = "Then we are at dinner?"
-  @possible_answers = ["Yes", "On the Go?"]
+  @possible_answers = ["Yes", "No"]
+  erb :question, layout: :layout
+end
+
+post "/wine/personaluse/yes/no/yes" do 
+  @fire = request.fullpath
+  @question = "NORTH COAST CABERNET FRANC"
+  @reset = true
+
+  erb :question, layout: :layout
+end
+
+post "/wine/personaluse/yes/no/no" do 
+  @fire = request.fullpath
+  @question = "SYRAH"
+  @reset = true
+
   erb :question, layout: :layout
 end
 
