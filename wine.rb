@@ -172,20 +172,9 @@ post "/wine/personaluse/partyinmymouth/no/no/no" do
 end
 
 
-
 post "/wine/personaluse/yes/yes/no/no/no/no" do 
   redirect "/wine/personaluse/worlds"
 end
-
-# post "/wine/personaluse/yes/yes/no/no/no/no/oldworld" do 
-#   @fire = request.fullpath
-#   @question = "WHY BUY ANYTHING BUT: BORDEAUX or  BURGUNDY"
-#   @reset = true
-
-#   erb :question, layout: :layout
-# end
-
-
 
 post "/wine/personaluse/no" do 
   @fire = request.fullpath
@@ -394,22 +383,6 @@ post "/wine/personaluse/partyinmymouth/iamcookingwithit" do
 
   erb :question, layout: :layout
 end
-
-# post "/wine/personaluse/partinmymouth/no/no/no/newworld" do
-#   @fire = request.fullpath
-#   @question = "Are you into cults??"
-#   @possible_answers = ["Yes", "No"]
-
-#   erb :question, layout: :layout
-# end
-
-# post "/wine/personaluse/partinmymouth/no/no/no/newworld/yes" do
-#   @fire = request.fullpath
-#   @question = "CULT CLASSICS; SINE QUE NON or CAYUSE"
-#   @reset = true
-
-#   erb :question, layout: :layout
-# end
 
 post "/wine/personaluse/partinmymouth/no/no/no/newworld/no" do
   @fire = request.fullpath
